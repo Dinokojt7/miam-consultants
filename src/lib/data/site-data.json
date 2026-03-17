@@ -1,0 +1,99 @@
+{
+  "business": {
+    "name": "Miam Consultants (PTY) LTD",
+    "tagline": "Professional Accountants (S.A.)",
+    "shortName": "Miam Consultants",
+    "description": "We are an accounting firm that specializes in uplifting small, medium and large entities. We offer comprehensive financial services tailored to your business needs.",
+    "email": "info@miamconsultants.co.za",
+    "phone": "+27 31 764 0000",
+    "address": "Durban, KwaZulu-Natal, South Africa",
+    "social": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#",
+      "linkedin": "#"
+    }
+  },
+  "services": [
+    { "title": "Accounting", "description": "Full-scope accounting solutions to keep your books accurate and compliant." },
+    { "title": "Audit", "description": "Independent statutory audits conducted with precision and professionalism." },
+    { "title": "Independent Reviews", "description": "Credible independent reviews for businesses that require limited assurance." },
+    { "title": "Tax Consulting", "description": "Strategic tax planning and consulting to minimize liability and ensure compliance." },
+    { "title": "Business Consulting", "description": "Expert advisory to help your business grow, restructure, and thrive." },
+    { "title": "Internal Audit", "description": "Robust internal audit frameworks to protect your organization from risk." },
+    { "title": "Taxation Services", "description": "Comprehensive personal and corporate tax filing and advisory services." },
+    { "title": "Company Secretarial", "description": "Full company secretarial services including CIPC registrations and compliance." },
+    { "title": "Public Sector", "description": "Specialized public sector accounting, audit, and governance advisory." }
+  ],
+  "stats": [
+    { "num": "10+", "label": "Years Experience" },
+    { "num": "200+", "label": "Clients Served" },
+    { "num": "9", "label": "Service Areas" }
+  ],
+  "testimonials": [
+    {
+      "company": "Ndlovu Retail Group",
+      "companyType": "Retail & Distribution",
+      "headline": "STREAMLINED FINANCES THAT FUELLED OUR EXPANSION",
+      "subheadline": "TAX COMPLIANCE BROUGHT CLARITY ACROSS THREE BRANCHES",
+      "quote": "Miam Consultants transformed how we manage our finances. From tax filings to monthly management accounts, they handle it all with precision. We've grown from one store to three in two years — and their support made that possible.",
+      "author": "Sipho Ndlovu",
+      "role": "Managing Director"
+    },
+    {
+      "company": "KZN Construction Solutions",
+      "companyType": "Construction & Engineering",
+      "headline": "AUDIT-READY BOOKS THAT OPENED NEW CONTRACT DOORS",
+      "subheadline": "INDEPENDENT REVIEWS HELPED US WIN GOVERNMENT TENDERS",
+      "quote": "Before Miam, our financial records were a mess. Their team cleaned everything up, performed an independent review, and within months we were qualifying for tenders we never could before. Absolutely game-changing.",
+      "author": "Lungelo Dlamini",
+      "role": "Owner & Founder"
+    },
+    {
+      "company": "Sunrise Medical Centre",
+      "companyType": "Healthcare",
+      "headline": "PEACE OF MIND KNOWING OUR NUMBERS ARE IN EXPERT HANDS",
+      "subheadline": "TAX CONSULTING SAVED US SIGNIFICANTLY YEAR ON YEAR",
+      "quote": "Running a medical practice leaves no time for tax complexity. Miam's consultants have been invaluable — proactive, knowledgeable, and always available. They've saved us thousands in tax every single year.",
+      "author": "Dr. Priya Naidoo",
+      "role": "Practice Principal"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "WHAT TYPES OF BUSINESSES DO YOU WORK WITH?",
+      "answer": "We work with small, medium and large entities across all sectors — from retail and construction to healthcare and the public sector. If you need professional accounting support, we are here for you."
+    },
+    {
+      "question": "HOW EASY IS IT TO SWITCH TO MIAM CONSULTANTS?",
+      "answer": "Very easy. We handle the transition from your existing accountant, collect all prior records, and ensure continuity of your financial reporting. We do the heavy lifting so you can focus on your business."
+    },
+    {
+      "question": "DO YOU HANDLE SARS SUBMISSIONS AND TAX COMPLIANCE?",
+      "answer": "Yes. We are registered Tax Practitioners with SARS and handle all aspects of tax compliance — including VAT, PAYE, income tax returns, and provisional tax submissions."
+    },
+    {
+      "question": "WHAT IS AN INDEPENDENT REVIEW AND DOES MY BUSINESS NEED ONE?",
+      "answer": "An independent review provides limited assurance on your financial statements, required for private companies that do not qualify for an audit. We will assess your Public Interest Score and advise on exactly what your business requires."
+    },
+    {
+      "question": "DO YOU OFFER SERVICES FOR PUBLIC SECTOR ENTITIES?",
+      "answer": "Yes. We specialize in public sector accounting, governance, and audit work aligned with CIGFARO and relevant legislative frameworks. Contact us to discuss your specific requirements."
+    }
+  ],
+  "footer": {
+    "quickLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "About Us", "href": "/#about" },
+      { "label": "Services", "href": "/#services" },
+      { "label": "Testimonials", "href": "/#testimonials" },
+      { "label": "FAQ", "href": "/#faq" },
+      { "label": "Contact", "href": "/#contact" }
+    ],
+    "legal": [
+      { "label": "Privacy Policy", "href": "/privacy-policy" },
+      { "label": "Terms of Service", "href": "/terms" },
+      { "label": "PAIA Manual", "href": "/paia" }
+    ]
+  }
+}
