@@ -27,8 +27,8 @@ export default function Header() {
 
   return (
     <>
-      {/* Fixed Header */}
-      <header className="fixed top-0 left-0 right-0 z-40" style={{ backgroundColor: "#1C2B3A" }}>
+      {/* Header */}
+      <header style={{ backgroundColor: "#1C2B3A" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="relative h-14 w-40 shrink-0">
@@ -59,7 +59,7 @@ export default function Header() {
             {/* LET'S TALK button */}
             <Link
               href="/#contact"
-              className="hidden sm:flex h-10 px-6 items-center border border-white text-white text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#1C2B3A] transition-colors"
+              className="hidden sm:flex h-10 px-6 items-center border-2 border-white text-white text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#1C2B3A] transition-colors rounded-md"
             >
               LET&apos;S TALK
             </Link>
@@ -67,7 +67,7 @@ export default function Header() {
             {/* Hamburger */}
             <button
               onClick={() => setMenuOpen(true)}
-              className="p-2 text-white lg:hidden"
+              className="p-2 text-white lg:hidden border-2 border-white/40 rounded-md"
               aria-label="Open menu"
             >
               <Menu className="w-6 h-6" />
@@ -85,6 +85,7 @@ export default function Header() {
           writingMode: "vertical-rl",
           transform: "translateY(-50%) rotate(180deg)",
           padding: "14px 10px",
+          borderRadius: "0 8px 8px 0",
         }}
       >
         <span className="text-white text-[10px] font-bold tracking-[0.2em] uppercase whitespace-nowrap">
@@ -141,8 +142,6 @@ export default function Header() {
         )}
       </AnimatePresence>
 
-      {/* Header spacer */}
-      <div className="h-20" />
     </>
   );
 }

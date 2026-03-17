@@ -22,18 +22,41 @@ export default function TestimonialsSection() {
   const t = testimonials[current];
 
   return (
-    <section id="testimonials" className="w-full py-20 px-4 sm:px-8" style={{ backgroundColor: "#F4F4F4" }}>
-      <div className="max-w-3xl mx-auto text-center">
-        {/* Client */}
-        <AnimatePresence mode="wait">
+    <section
+      id="testimonials"
+      className="relative w-full py-20 px-4 sm:px-8"
+      style={{ backgroundColor: "#F4F4F4" }}
+    >
+      {/* Left arrow — pinned to section edge */}
+      <button
+        onClick={prev}
+        className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 border-2 rounded-md flex items-center justify-center text-navy hover:bg-[#1C2B3A] hover:text-white transition-colors z-10"
+        style={{ borderColor: "#1C2B3A" }}
+      >
+        <ChevronLeft className="w-4 h-4" />
+      </button>
+
+      {/* Right arrow — pinned to section edge */}
+      <button
+        onClick={next}
+        className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 border-2 rounded-md flex items-center justify-center text-navy hover:bg-[#1C2B3A] hover:text-white transition-colors z-10"
+        style={{ borderColor: "#1C2B3A" }}
+      >
+        <ChevronRight className="w-4 h-4" />
+      </button>
+
+      {/* Content */}
+      <div className="max-w-2xl mx-auto text-center overflow-hidden">
+        <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={current}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -16 }}
-            transition={{ duration: 0.4 }}
+            custom={direction}
+            initial={{ opacity: 0, x: direction * 80 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -direction * 80 }}
+            transition={{ duration: 0.35, ease: "easeInOut" }}
           >
-            {/* Company name */}
+            {/* Company */}
             <p className="text-xs font-bold tracking-[0.3em] uppercase mb-1" style={{ color: "#C8102E" }}>
               {t.companyType}
             </p>
@@ -53,46 +76,28 @@ export default function TestimonialsSection() {
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 italic">
               &ldquo;{t.quote}&rdquo;
             </p>
-            <p className="text-sm font-bold" style={{ color: "#1C2B3A" }}>
-              {t.author}
-            </p>
+            <p className="text-sm font-bold" style={{ color: "#1C2B3A" }}>{t.author}</p>
             <p className="text-xs text-gray-400 mt-0.5 mb-10">{t.role}</p>
           </motion.div>
         </AnimatePresence>
 
-        {/* Arrows + Dots */}
-        <div className="flex items-center justify-center gap-6 mb-10">
-          <button
-            onClick={prev}
-            className="w-10 h-10 border flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors"
-            style={{ borderColor: "#1C2B3A", color: "#1C2B3A" }}
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </button>
-          <div className="flex items-center gap-2">
-            {testimonials.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i); }}
-                className="w-2 h-2 rounded-full transition-all"
-                style={{ backgroundColor: i === current ? "#C8102E" : "#d1d5db" }}
-              />
-            ))}
-          </div>
-          <button
-            onClick={next}
-            className="w-10 h-10 border flex items-center justify-center hover:bg-black hover:text-white hover:border-black transition-colors"
-            style={{ borderColor: "#1C2B3A", color: "#1C2B3A" }}
-          >
-            <ChevronRight className="w-4 h-4" />
-          </button>
+        {/* Dots only */}
+        <div className="flex items-center justify-center gap-2 mb-10">
+          {testimonials.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i); }}
+              className="w-2 h-2 rounded-full transition-all"
+              style={{ backgroundColor: i === current ? "#C8102E" : "#d1d5db" }}
+            />
+          ))}
         </div>
 
         {/* CTA */}
         <a
           href="/#contact"
-          className="inline-flex items-center justify-center h-12 px-8 border text-xs font-bold tracking-widest uppercase hover:bg-[#1C2B3A] hover:text-white transition-colors"
-          style={{ borderColor: "#1C2B3A", color: "#1C2B3A" }}
+          className="inline-flex items-center justify-center h-12 px-8 border-2 rounded-md text-xs font-bold tracking-widest uppercase text-navy hover:bg-[#1C2B3A] hover:text-white transition-colors"
+          style={{ borderColor: "#1C2B3A" }}
         >
           READ CASE STUDY
         </a>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="w-full px-4 sm:px-6 lg:px-12 pt-8 pb-0">
+    <section className="w-full">
       <div
         className="relative w-full overflow-hidden"
         style={{
@@ -65,25 +65,20 @@ export default function Hero() {
           >
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center h-12 px-8 text-xs font-bold tracking-widest uppercase hover:opacity-90 transition-opacity"
+              className="inline-flex items-center justify-center h-12 px-8 text-xs font-bold tracking-widest uppercase hover:opacity-90 transition-opacity rounded-md"
               style={{ backgroundColor: "#C8102E", color: "#ffffff" }}
             >
               GET IN TOUCH
             </Link>
             <Link
               href="/#services"
-              className="inline-flex items-center justify-center h-12 px-8 border border-white/40 text-xs font-bold tracking-widest uppercase text-white hover:border-white transition-colors"
+              className="inline-flex items-center justify-center h-12 px-8 border-2 border-white/40 text-xs font-bold tracking-widest uppercase text-white hover:border-white transition-colors rounded-md"
             >
               OUR SERVICES
             </Link>
           </motion.div>
         </div>
 
-        {/* Decorative crimson stripe at bottom-right */}
-        <div
-          className="absolute bottom-0 right-0 w-2 h-32 hidden md:block"
-          style={{ backgroundColor: "#C8102E" }}
-        />
       </div>
     </section>
   );

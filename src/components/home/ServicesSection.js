@@ -80,7 +80,7 @@ export default function ServicesSection() {
             {/* CTA */}
             <Link
               href="/#contact"
-              className="inline-flex items-center gap-2 h-11 px-8 text-xs font-bold tracking-widest uppercase text-white hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 h-11 px-8 text-xs font-bold tracking-widest uppercase text-white hover:opacity-90 transition-opacity rounded-md"
               style={{ backgroundColor: "#C8102E" }}
             >
               GET IN TOUCH

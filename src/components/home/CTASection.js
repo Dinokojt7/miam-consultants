@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function CTASection() {
   return (
-    <section id="contact" className="w-full py-14 px-4 sm:px-8 lg:px-16" style={{ backgroundColor: "#C8102E" }}>
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+    <section id="contact" className="w-full py-10 px-4">
+      <div className="max-w-7xl mx-auto rounded-2xl py-14 px-8 sm:px-12 lg:px-16 flex flex-col md:flex-row items-center md:items-start justify-between gap-8" style={{ backgroundColor: "#C8102E" }}>
         {/* Left: text */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -54,8 +54,8 @@ export default function CTASection() {
         >
           <Link
             href="mailto:info@miamconsultants.co.za"
-            className="inline-flex items-center justify-center h-12 px-8 border-2 text-xs font-black tracking-widest uppercase hover:bg-[#1C2B3A] hover:border-[#1C2B3A] hover:text-white transition-colors"
-            style={{ borderColor: "#1C2B3A", color: "#1C2B3A" }}
+            className="inline-flex items-center justify-center h-12 px-8 border-2 rounded-md text-xs font-black tracking-widest uppercase text-navy hover:bg-[#1C2B3A] hover:border-[#1C2B3A] hover:text-white transition-colors"
+            style={{ borderColor: "#1C2B3A" }}
           >
             LET&apos;S TALK
           </Link>

@@ -22,9 +22,3 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom thin scrollbar */
-::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #C8102E; }
-::-webkit-scrollbar-thumb:hover { background: #9b0d22; }
-* { scrollbar-width: thin; scrollbar-color: #C8102E transparent; }
