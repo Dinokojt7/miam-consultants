@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import siteData from "@/lib/data/site-data.json";
 
@@ -9,7 +10,7 @@ export default function ServicesSection() {
   const { services, stats } = siteData;
 
   return (
-    <section id="services" className="relative w-full py-24 px-4 sm:px-8 lg:px-12 overflow-hidden" style={{ backgroundColor: "#1C2B3A" }}>
+    <section id="services" className="relative w-full py-14 px-4 sm:px-8 lg:px-12 overflow-hidden" style={{ backgroundColor: "#1C2B3A" }}>
       <div className="max-w-7xl mx-auto">
         {/* Eyebrow */}
         <motion.div
@@ -63,10 +64,6 @@ export default function ServicesSection() {
             <p className="text-white/60 leading-relaxed text-sm md:text-base">
               We understand that every business has unique financial needs. Our team of qualified professionals brings years of expertise across all sectors — delivering accuracy, compliance, and strategic insight you can count on.
             </p>
-            <p className="text-white/40 leading-relaxed text-sm">
-              For more enquiries please do not hesitate to contact us. We are here to serve entities of all sizes, from start-ups to established corporates and public sector bodies.
-            </p>
-
             {/* Stats */}
             <div className="grid grid-cols-3 border border-white/10 divide-x divide-white/10">
               {stats.map(({ num, label }) => (
@@ -86,6 +83,16 @@ export default function ServicesSection() {
               GET IN TOUCH
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
+
+            {/* Office image */}
+            <div className="relative w-full h-52 rounded-lg overflow-hidden">
+              <Image
+                src="/images/services-office.jpg"
+                alt="Professional accountants at work"
+                fill
+                className="object-cover"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
